@@ -4,7 +4,7 @@ services:
     env: python
     plan: free
     buildCommand: "./build.sh"
-    startCommand: "gunicorn myportfolio.wsgi:application"
+    startCommand: "gunicorn myportfolio/myportfolio.wsgi:application"
     envVars:
       - key: DJANGO_SETTINGS_MODULE
         value: myportfolio.settings
