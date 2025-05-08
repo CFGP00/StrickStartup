@@ -1,0 +1,10 @@
+.hero-section {
+    background: url('/static/projects/bg-2.jpg') no-repeat center center;
+    background-size: cover;
+    height: 92vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+  }

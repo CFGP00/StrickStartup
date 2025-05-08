@@ -13,5 +13,8 @@ def home(request):
         "contact_email": contact_email
     })
 
+def contact(request):
+    return render(request, "projects/contact.html")
+
 
 
