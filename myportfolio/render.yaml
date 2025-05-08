@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: my-django-app
+    env: python
+    plan: free
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn projects.wsgi:application"
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: projects.settings
+      - key: SECRET_KEY
+        generateValue: true
