@@ -1,5 +1,5 @@
 .hero-section {
-    background: url('/static/projects/bg-2.jpg') no-repeat center center;
+    background: url('./bg-2.jpg') no-repeat center center;
     background-size: cover;
     height: 92vh; /* Full viewport height */
     display: flex;
@@ -10,7 +10,7 @@
   }
 
   .hero-section-quote {
-    background: url('/static/projects/bg-1.jpg') no-repeat center center;
+    background: url('./bg-1.jpg') no-repeat center center;
     background-size: cover;
     height: 15vh; /* Full viewport height */
     display: flex;
