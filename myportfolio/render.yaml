@@ -3,7 +3,7 @@ services:
     name: my-django-app
     env: python
     plan: free
-    buildCommand: "cd myportfolio && python manage.py collectstatic --noinput && ./build.sh"
+    buildCommand: "cd myportfolio && ./build.sh"
     startCommand: "cd myportfolio && gunicorn myportfolio.wsgi:application"
     staticPublishPath: staticfiles
     envVars:
