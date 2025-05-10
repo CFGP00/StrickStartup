@@ -5,6 +5,7 @@ services:
     plan: free
     buildCommand: "cd myportfolio && python manage.py collectstatic --noinput && ./build.sh"
     startCommand: "cd myportfolio && gunicorn myportfolio.wsgi:application"
+    staticPublishPath: staticfiles
     envVars:
       - key: DJANGO_SETTINGS_MODULE
         value: myportfolio.settings
